@@ -1,9 +1,3 @@
-# utils_llm.py
-# 同济子豪兄 2024-5-22
-# 调用大语言模型API
-
-print('导入大模型API模块')
-
 
 import openai
 from openai import OpenAI
