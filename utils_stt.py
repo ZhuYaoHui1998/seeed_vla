@@ -26,16 +26,16 @@ model = AutoModel(
     disable_log=True
 )
 
-def start_recording():
+def start_recording(input_device_index,supported_rate):
     global frames
     frames = []
 
     try:
         stream = audio.open(format=FORMAT, channels=CHANNELS,
                             rate=supported_rate, input=True,
-                            frames_per_buffer=CHUNK)
+                            frames_per_buffer=CHUNK, input_device_index=input_device_index)
         print("Recording started... Press '2' to stop recording.")
-
+    
         while True:
             if keyboard.is_pressed('2'):
                 print("Recording stopped.")

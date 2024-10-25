@@ -64,4 +64,4 @@ def agent_plan(AGENT_PROMPT='先回到原点，再把LED灯改为墨绿色，然
     agent_plan = agent_ollama(AGENT_SYS_PROMPT,AGENT_PROMPT)
     print(agent_plan)
     return agent_plan
-# agent_plan(AGENT_PROMPT='先回到原点，再把LED灯改为墨12绿色，然后把绿色方块放在篮球上')
+agent_plan(AGENT_PROMPT='先回到原点，再把LED灯改为墨12绿色，然后把绿色方块放在篮球上')
